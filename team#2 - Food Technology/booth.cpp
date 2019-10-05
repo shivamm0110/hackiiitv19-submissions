@@ -22,9 +22,9 @@ class booth{
         void process(){
             int x=grade;
             switch(x){
-                    case 1: price=wt*1/3*100;
+                    case 1: price=wt*3/5*100;
                             break;
-                    case 2: price=wt*2/3*100;
+                    case 2: price=wt*4/5*100;
                             break;
                     case 3: price=wt*100;
                             break;
@@ -48,7 +48,7 @@ int main(){
                     b.in();
                     b.process();
                     ofstream fout;
-                    fout.open("data.dat",ios::out|ios::binary);
+                    fout.open("data.dat",ios::out|ios::binary|ios::app);
                     fout.write((char*)&b, sizeof (b));
                     fout.close();
                 }
