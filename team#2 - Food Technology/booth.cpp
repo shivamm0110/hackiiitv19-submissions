@@ -32,6 +32,7 @@ class booth{
                             break;
 
             }
+            cout<<"Payment to farmer: "<<price;
 
         }
 
